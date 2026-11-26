@@ -1,0 +1,20 @@
+#Vertual Env.
+venv/
+
+#Python cachefile
+__pycache__/
+*.py[cod]
+
+#env. variables
+.env
+
+.git/
+
+.gitignore
+
+.vscode/
+
+.pytest_cache/
+
+.coverage
+

@@ -1,5 +1,6 @@
 # Virtual Environment
 venv/
+.venv/
 
 # Python Cache
 __pycache__/
@@ -7,6 +8,7 @@ __pycache__/
 
 # Environment Variables
 .env
+.env.*
 
 # VS Code
 .vscode/
@@ -14,11 +16,11 @@ __pycache__/
 # Static Collection
 staticfiles/
 
-# Media
-media/
-
 # Logs
 *.log
 
 # macOS
 .DS_Store
+
+#Docker
+postgres_data/

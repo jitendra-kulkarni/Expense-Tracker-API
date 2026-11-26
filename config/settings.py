@@ -48,6 +48,7 @@ INSTALLED_APPS = [
 
     'rest_framework',
     'Expenses',
+    'drf_spectacular',
 
 ]
 
@@ -145,7 +146,17 @@ STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
 REST_FRAMEWORK = {
+
     "DEFAULT_AUTHENTICATION_CLASSES" : [
         "rest_framework_simplejwt.authentication.JWTAuthentication",
-    ]
+    ],
+
+    "DEFAULT_SCHEMA_CLASS":"drf_spectacular.openapi.AutoSchema",
+}
+
+SPECTACULAR_SETTINGS = {
+    "TITLE": "Expense Tracker API",
+    "DESCRIPTION": "API documentation for the Expense Tracker application.",
+    "VERSION": "1.0.0",
+    "SERVE_INCLUDE_SCHEMA": False,
 }
